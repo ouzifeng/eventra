@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Eventra</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📅</text></svg>"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-calendar-alt"></i>
+          <span>Eventra</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="features.html" class="nav-link">Features</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="login.html" class="nav-link login-btn">Login</a></li>
+          <li>
+            <a href="signup.html" class="nav-link signup-btn active">Sign Up</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <main
+      style="
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(
+          135deg,
+          #0a0a0b 0%,
+          #1a1a2e 50%,
+          #16213e 100%
+        );
+        padding: 70px 0 2rem;
+      "
+    >
+      <div class="container">
+        <div style="max-width: 450px; margin: 0 auto">
+          <div style="text-align: center; margin-bottom: 2rem">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                font-size: 2rem;
+                font-weight: 700;
+                color: #8b5cf6;
+                margin-bottom: 1rem;
+              "
+            >
+              <i class="fas fa-calendar-alt" style="font-size: 2.5rem"></i>
+              <span>Eventra</span>
+            </div>
+            <h1 style="color: #ffffff; font-size: 2rem; margin-bottom: 0.5rem">
+              Create Your Account
+            </h1>
+            <p style="color: #a1a1aa">
+              Start building event pages that convert in less than 5 minutes.
+            </p>
+          </div>
+
+          <div class="form-container">
+            <form action="#" method="POST">
+              <div
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem"
+              >
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    required
+                    placeholder="John"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    required
+                    placeholder="Doe"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="company">Company (Optional)</label>
+                <input
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Your Company"
+                />
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                  placeholder="••••••••"
+                  minlength="8"
+                />
+                <div
+                  style="
+                    font-size: 0.75rem;
+                    color: #a1a1aa;
+                    margin-top: 0.25rem;
+                  "
+                >
+                  Must be at least 8 characters
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  required
+                  placeholder="••••••••"
+                />
+              </div>
+
+              <div style="margin-bottom: 2rem">
+                <label
+                  style="
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 0.75rem;
+                    color: #a1a1aa;
+                    font-size: 0.875rem;
+                    cursor: pointer;
+                    line-height: 1.5;
+                  "
+                >
+                  <input
+                    type="checkbox"
+                    required
+                    style="
+                      accent-color: #8b5cf6;
+                      margin-top: 0.125rem;
+                      flex-shrink: 0;
+                    "
+                  />
+                  <span>
+                    I agree to the
+                    <a href="#" style="color: #8b5cf6; text-decoration: none"
+                      >Terms of Service</a
+                    >
+                    and
+                    <a href="#" style="color: #8b5cf6; text-decoration: none"
+                      >Privacy Policy</a
+                    >
+                  </span>
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                class="btn btn-primary"
+                style="
+                  width: 100%;
+                  justify-content: center;
+                  margin-bottom: 1.5rem;
+                "
+              >
+                <i class="fas fa-user-plus" style="margin-right: 0.5rem"></i>
+                Create Account
+              </button>
+            </form>
+
+            <div style="text-align: center; margin-bottom: 1.5rem">
+              <div style="position: relative">
+                <div
+                  style="border-top: 1px solid #3f3f46; margin: 1rem 0"
+                ></div>
+                <span
+                  style="
+                    position: absolute;
+                    top: -0.75rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: linear-gradient(135deg, #18181b, #1f1f23);
+                    padding: 0 1rem;
+                    color: #a1a1aa;
+                    font-size: 0.875rem;
+                  "
+                >
+                  Or sign up with
+                </span>
+              </div>
+            </div>
+
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+                margin-bottom: 2rem;
+              "
+            >
+              <button
+                type="button"
+                class="btn btn-secondary"
+                style="justify-content: center; padding: 0.75rem"
+              >
+                <i class="fab fa-google" style="margin-right: 0.5rem"></i>
+                Google
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                style="justify-content: center; padding: 0.75rem"
+              >
+                <i class="fab fa-github" style="margin-right: 0.5rem"></i>
+                GitHub
+              </button>
+            </div>
+
+            <div
+              style="text-align: center; color: #a1a1aa; font-size: 0.875rem"
+            >
+              Already have an account?
+              <a
+                href="login.html"
+                style="color: #8b5cf6; text-decoration: none; font-weight: 500"
+                >Sign in</a
+              >
+            </div>
+          </div>
+
+          <div
+            style="
+              background: linear-gradient(135deg, #18181b, #1f1f23);
+              border: 1px solid #27272a;
+              border-radius: 1rem;
+              padding: 2rem;
+              margin-top: 2rem;
+              text-align: center;
+            "
+          >
+            <h3
+              style="color: #ffffff; margin-bottom: 1rem; font-size: 1.125rem"
+            >
+              🎉 Start Your Free Trial
+            </h3>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                gap: 1rem;
+                font-size: 0.875rem;
+              "
+            >
+              <div
+                style="
+                  color: #a1a1aa;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 0.5rem;
+                "
+              >
+                <i class="fas fa-check" style="color: #8b5cf6"></i>
+                14-day free trial
+              </div>
+              <div
+                style="
+                  color: #a1a1aa;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 0.5rem;
+                "
+              >
+                <i class="fas fa-check" style="color: #8b5cf6"></i>
+                No credit card required
+              </div>
+              <div
+                style="
+                  color: #a1a1aa;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 0.5rem;
+                "
+              >
+                <i class="fas fa-check" style="color: #8b5cf6"></i>
+                Cancel anytime
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+      // Password confirmation validation
+      document
+        .getElementById("confirmPassword")
+        .addEventListener("input", function () {
+          const password = document.getElementById("password").value;
+          const confirmPassword = this.value;
+
+          if (password !== confirmPassword) {
+            this.setCustomValidity("Passwords do not match");
+          } else {
+            this.setCustomValidity("");
+          }
+        });
+    </script>
+  </body>
+</html>
